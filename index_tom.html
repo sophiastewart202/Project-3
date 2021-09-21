@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unemployment Data 2019 - 2021</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="p-3 border bg-light"></div>
+          <div class="col-md-12 jumbotron text-center">
+            <h1>Unemployment Data 2019 - 2021</h1>
+            <p>The charts below explore COVID-19 Impacts on Unemployment</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>Select a year to review wich states have outstanding UTF balances</p>
+            <select id="selDataset">
+            <option value="Y2021">2021</option>
+            <option value="Y2020">2020</option>
+            <option value="Y2019">2019</option>
+            </select>
+            <div id="pie"></div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12 me-auto">
+            <div class="p-3 border bg-light"></div>
+                <h1>Outstanding Balance Comparison</h1>
+                <hr>
+                <p>The chart below shows how much states and territories are borrowing from the Unemployment Trust Fund (UTF) in order to pay out unemployment
+                   benefits. The outstanding balance represents the outstanding amount at the last reporting date of the respective year. States that currently
+                   have high outstanding balances will have difficulty in repaying the UTF.</p>
+                <div class="clearfix">
+                <img src="State Debt.png" class="img-responsive" alt="State Debt">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12 me-auto">
+                <div class="p-3 border bg-light"></div>
+                <h1>Federal Agency Operating Costs</h1>
+                <hr>
+                <p>The chart below shows the operating costs for Federal Agencies to review which agencies and Federal spending appear to be impacted by COVID.
+                   Data for 2021 will be available at the end of the fiscal year.</p>
+                  <div class="clearfix">
+                  <img src="Agency Cost.png" class="img-responsive" alt="State Debt">
+                  </div>
+            </div>
+        </div>
+        <hr> 
+        <div class="row">
+            <div class="col-md-12 me-auto">
+                <div class="p-3 border bg-light"></div>
+                <h1>Tableau Dashboard</h1>
+                <hr>
+                <iframe width="1335px" height="894px" src="https://public.tableau.com/views/FederalAgencyCost/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
+                </iframe>
+            </div>
+        </div>       
+    </div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="data.js"></script>
+    <script src="./static/plot.js"></script>
+</body>
+</html>
