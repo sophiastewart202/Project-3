@@ -1,0 +1,13 @@
+body {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+#map {
+  height: 100vh;
+}
