@@ -26,11 +26,11 @@ function init() {
 }
 
 // On change to the DOM, call getData()
-d3.selectAll("#selDataset").on("change", getData);
+d3.selectAll("#selDataset2").on("change", getData);
 
 // Function called by DOM changes
 function getData() {
-  let dropdownMenu = d3.select("#selDataset");
+  let dropdownMenu = d3.select("#selDataset2");
   // Assign the value of the dropdown menu option to a variable
   let dataset = dropdownMenu.property("value");
   // Initialize an empty array for the state data

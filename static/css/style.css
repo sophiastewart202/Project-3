@@ -1,0 +1,18 @@
+body {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  background-color: #bee3f5;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+#map {
+  height: 100vh;
+}
+
+hr {
+  background-color: black;
+}
