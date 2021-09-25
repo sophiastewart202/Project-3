@@ -33,7 +33,6 @@ function buildCharts(selected_year) {
         for (i=0; i< years.length; i++) {
             dropdown.append('option').text(years[i]);
         }
-
         let data_by_year = selectData(selected_year, data);
         let target_data = data_by_year.filtered_data;
         let latlngs = data_by_year.filtered_latlngs;
